@@ -1,5 +1,5 @@
 <?php
-		$weburl=argz[1];
+		$weburl = $argv[1];
 		$service_port = getservbyname('www', 'tcp');
 		$webaddress = gethostbyname($weburl);
 		$socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
